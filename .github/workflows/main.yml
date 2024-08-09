@@ -1,0 +1,21 @@
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Nitpick AI Review
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Nitpick AI Review
+        uses: ./ # Uses an action in the root directory
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          ai-model: claude-3.5-sonnet
+          api-key: ${{ secrets.CLAUDE_API_KEY }}
+          strict: false
+          ignore-patterns: '["*.md", ".gitignore", ".github/workflows/main.yml"]'

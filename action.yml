@@ -10,7 +10,7 @@ inputs:
     description: "GitHub token for posting reviews"
     required: true
   ai-model:
-    description: "AI model to use for the review. Accepted values are: claude-3.5-sonnet, gpt-3.5, gpt-4o"
+    description: "AI model to use for the review. Accepted values are: claude-3.5-sonnet (recommended) and gpt-3.5"
     required: true
     default: "claude-3.5-sonnet"
   api-key:
@@ -20,6 +20,10 @@ inputs:
     description: "Whether to request changes or post review as a comment"
     required: false
     default: "false"
+  ignore-patterns:
+    description: "Array of glob patterns for files to ignore"
+    required: false
+    default: '[]'
 
 branding:
   icon: 'zap'
