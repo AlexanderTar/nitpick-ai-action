@@ -1,0 +1,26 @@
+name: "Nitpick AI"
+description: "A GitHub Action that performs code review using AI."
+author: "Alexander Taraymovich"
+runs:
+  using: "node20"
+  main: "index.js"
+
+inputs:
+  github-token:
+    description: "GitHub token for posting reviews"
+    required: true
+  ai-model:
+    description: "AI model to use for the review. Accepted values are: claude-3.5-sonnet, gpt-3.5, gpt-4o"
+    required: true
+    default: "claude-3.5-sonnet"
+  api-key:
+    description: "API key for the AI model"
+    required: true
+  strict:
+    description: "Whether to request changes or post review as a comment"
+    required: false
+    default: "false"
+
+branding:
+  icon: 'zap'
+  color: 'purple'
