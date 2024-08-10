@@ -4,7 +4,7 @@ Nitpick AI Action is a GitHub Action that performs automated code reviews using 
 
 ## Features
 
-- Supports multiple AI models: Claude 3.5 Sonnet, GPT-3.5, and GPT-4
+- Supports multiple AI models: Claude 3.5 Sonnet and GPT-3.5
 - Generates line-by-line comments on code changes
 - Provides an overall summary of the pull request
 - Configurable to either request changes or post comments
@@ -24,7 +24,6 @@ Specify which AI model to use for the code review. The following options are ava
 
 - `claude-3.5-sonnet`: Anthropic's Claude 3.5 Sonnet model (default)
 - `gpt-3.5`: OpenAI's GPT-3.5 model
-- `gpt-4`: OpenAI's GPT-4 model
 
 This input is required.
 

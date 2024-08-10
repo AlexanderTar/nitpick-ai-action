@@ -23,7 +23,7 @@ inputs:
   ignore-patterns:
     description: "Array of glob patterns for files to ignore"
     required: false
-    default: '[]'
+    default: "[]"
 
 branding:
   icon: 'zap'
