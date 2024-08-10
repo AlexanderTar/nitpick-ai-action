@@ -36,6 +36,10 @@ Provide the API key for the chosen AI model. This should be stored as a secret i
 
 Set this to `true` if you want the action to request changes on the pull request. If set to `false` (default), the action will post the review as a comment. This input is optional.
 
+### ignore-patterns
+
+This input is an array of glob patterns for files to ignore during the code review. It is optional and defaults to an empty array.
+
 ## Usage
 
 To use Nitpick AI Action in your GitHub workflow, add the following step to your GitHub workflow file:
@@ -43,9 +47,12 @@ To use Nitpick AI Action in your GitHub workflow, add the following step to your
 ```yaml
 - name: Nitpick AI Review
   uses: actions/nitpick-ai-action@v0.1.0
+  permissions:
+    pull-requests: write
   with:
     github-token: ${{ secrets.GITHUB_TOKEN }}
     api-key: ${{ secrets.AI_API_KEY }}
     ai-model: 'claude-3.5-sonnet'
     strict: false
+    ignore-patterns: '["*.md", "test/**/*.js"]'
 ```

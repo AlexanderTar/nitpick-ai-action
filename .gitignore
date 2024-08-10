@@ -1,0 +1,47 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependency directories
+node_modules/
+vendor/
+
+# Compiled output
+dist/
+build/
+*.class
+*.pyc
+
+# Logs and databases
+*.log
+*.sqlite
+
+# Environment variables
+.env
+.env.local
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Temporary files
+*.tmp
+*~
+
+# Build tools
+.gradle/
+.maven/
+
+# Testing
+coverage/
+
+# Miscellaneous
+*.bak
+*.cache
