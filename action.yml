@@ -3,7 +3,7 @@ description: "A GitHub Action that performs code review using AI."
 author: "Alexander Taraymovich"
 runs:
   using: "node20"
-  main: "index.js"
+  main: "dist/index.js"
 
 inputs:
   github-token:

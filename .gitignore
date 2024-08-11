@@ -13,7 +13,6 @@ node_modules/
 vendor/
 
 # Compiled output
-dist/
 build/
 *.class
 *.pyc
@@ -45,3 +44,6 @@ coverage/
 # Miscellaneous
 *.bak
 *.cache
+
+# TypeScript specific
+*.tsbuildinfo
