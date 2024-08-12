@@ -18,4 +18,4 @@ jobs:
           ai-model: claude-3.5-sonnet
           api-key: ${{ secrets.CLAUDE_API_KEY }}
           strict: false
-          ignore-patterns: '["*.md", ".gitignore", ".github/workflows/main.yml", "dist/**", ".eslintignore", "package.json", "tsconfig.json", ".prettierignore", "README.md", "package-lock.json", ".node-version"]'
+          ignore-patterns: '["*.md", ".gitignore", ".github/workflows/main.yml", "dist/**", ".eslintignore", "package.json", "tsconfig.json", ".prettierignore", "README.md", "yarn.lock", ".node-version"]'
